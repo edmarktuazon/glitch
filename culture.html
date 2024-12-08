@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tab icon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- title -->
+    <title>Heartspire Foundation - Programs</title>
+    <!--styles -->
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav></nav>
+    </header>
+    <!-- banner -->
+    <section class="banner-container programs">
+      <div class="banner-wrapper programs">
+        <h1>Immerse Yourself in Aeta Culture and Give Back</h1>
+      </div>
+    </section>
+    <!-- about us -->
+    <section class="section-container">
+      <div class="section-wrapper programs">
+        <div class="section-text programs">
+          <p>
+            Immerse Yourself in Aeta Culture and Give Back invites visitors to
+            embark on a truly transformative journey—one that connects heart to
+            heart with the Aeta communities of Zambales. This experience offers
+            more than just a visit; it’s an opportunity to step into a world
+            rich in tradition, history, and profound resilience. As you walk
+            through their villages, you’ll witness the Aeta people's
+            time-honored customs, from their way of life to their art and music,
+            gaining a deeper appreciation for their culture. It’s an invitation
+            to learn from the wisdom of those who have thrived for generations
+            in harmony with nature, while embracing the warmth and hospitality
+            that define their spirit.
+          </p>
+        </div>
+        <div class="section-img programs">
+          <img src="./assets/culture-img.PNG" alt="program img model" />
+          <p>
+            Celebrating the holiday season in this way becomes a profound act of
+            love and shared humanity. Rather than focusing on material gifts,
+            this experience allows you to gift something far more precious: your
+            time, your respect, and your commitment to making a difference. By
+            participating, you not only enrich your own life but also contribute
+            to the long-term well-being of a community that has so much to offer
+            the world. The outreach activities serve as a powerful reminder of
+            the importance of community, compassion, and cultural exchange,
+            leaving both you and the Aeta people with lasting memories and a
+            sense of shared purpose. It is a celebration of giving that
+            transcends the ordinary, a holiday season marked by the true spirit
+            of giving.
+          </p>
+        </div>
+        <hr />
+        <div class="choices-menus">
+          <h5>Sponsor this Event?</h5>
+          <p>
+            <button type="button" class="open-modal" data-open="modal">
+              Yes</button
+            >, I would like to sponsor this event
+          </p>
+          <p>
+            No, I would like to learn more about
+            <a href="./ukay-ukay.html" class="other-programs">Other Programs</a>
+          </p>
+        </div>
+        <hr />
+        <div class="choices-menus">
+          <h5>Explore more</h5>
+          <p>
+            Back to
+            <a href="./index.html" class="other-programs">Home</a>
+          </p>
+          <p>
+            Learn More About
+            <a href="./joy-tondo.html" class="other-programs">Other Programs</a>
+          </p>
+        </div>
+        <hr />
+        <div class="choices-menus">
+          <h5>Contact us</h5>
+          <p>
+            Unit 88- Floor-A, Vista Residences, 309 Katipunan
+            <br />
+            Avenue, Quezon City; Cell Number 09171920208; or 09166977997
+            <br />
+            <br />
+            <strong> Gmail:</strong> Heartspire2024@gmail.com
+          </p>
+        </div>
+        <div class="modal" id="modal">
+          <div class="modal-dialog">
+            <header class="modal-header">
+              <button class="close-modal" aria-label="close modal" data-close>
+                <i class="fa-solid fa-x"></i>
+              </button>
+            </header>
+            <section class="modal-content">
+              <table class="support-plan-table">
+                <thead>
+                  <tr>
+                    <th>SUPPORT PLAN</th>
+                  </tr>
+                </thead>
+              </table>
+
+              <h4>
+                No. of Orphans to Sponsor (please click on the box to the left)
+              </h4>
+
+              <table class="sponsorship-table">
+                <thead>
+                  <tr>
+                    <th>Select</th>
+                    <th>
+                      How many days are you available for the Aeta Community
+                      Immersion
+                    </th>
+                    <th>
+                      Corresponding Amount that will have to be donated to the
+                      Aeta Family
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <input
+                        type="radio"
+                        name="duration"
+                        id="7days"
+                        value="7"
+                        onclick="calculateDays(7, 7000, this)"
+                      />
+                    </td>
+                    <td>
+                      <label for="7days">7 days</label>
+                    </td>
+                    <td>
+                      <span
+                        class="donation-amount"
+                        data-amount="4900"
+                        style="display: none"
+                        >₱4,900</span
+                      >
+                      <span
+                        class="donation-explanation"
+                        style="display: none"
+                      ></span>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <input
+                        type="radio"
+                        name="duration"
+                        id="14days"
+                        value="14"
+                        onclick="calculateDays(14, 7000, this)"
+                      />
+                    </td>
+                    <td>
+                      <label for="14days">14 days</label>
+                    </td>
+                    <td>
+                      <span
+                        class="donation-amount"
+                        data-amount="9800"
+                        style="display: none"
+                        >₱9,800</span
+                      >
+                      <span
+                        class="donation-explanation"
+                        style="display: none"
+                      ></span>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <input
+                        type="radio"
+                        name="duration"
+                        id="21days"
+                        value="21"
+                        onclick="calculateDays(21, 7000, this)"
+                      />
+                    </td>
+                    <td>
+                      <label for="21days">21 days</label>
+                    </td>
+                    <td>
+                      <span
+                        class="donation-amount"
+                        data-amount="14700"
+                        style="display: none"
+                        >₱14,700</span
+                      >
+                      <span
+                        class="donation-explanation"
+                        style="display: none"
+                      ></span>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <input
+                        type="radio"
+                        name="duration"
+                        id="30days"
+                        value="30"
+                        onclick="calculateDays(30, 7000, this)"
+                      />
+                    </td>
+                    <td>
+                      <label for="30days">1 month (30 days)</label>
+                    </td>
+                    <td>
+                      <span
+                        class="donation-amount"
+                        data-amount="21000"
+                        style="display: none"
+                        >₱21,000</span
+                      >
+                      <span
+                        class="donation-explanation"
+                        style="display: none"
+                      ></span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="payment-methods">
+                <h4>Payment Methods</h4>
+                <table class="payment-table">
+                  <thead>
+                    <tr>
+                      <th>Payment Method</th>
+                      <th>QR Code</th>
+                      <th>Account Details</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>GCASH</td>
+                      <td>
+                        <img src="./assets/gcash.PNG" alt="GCash QR Code" />
+                      </td>
+                      <td>
+                        <p>GCash Account: 09178076328</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>BPI</td>
+                      <td>
+                        <img src="./assets/bpi.PNG" alt="BPI QR Code" />
+                      </td>
+                      <td>
+                        <p>Account Number: 4253-4374-27</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- js -->
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tab icon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- title -->
+    <title>Heartspire Foundation - Programs</title>
+    <!--styles -->
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav></nav>
+    </header>
+    <!-- banner -->
+    <section class="banner-container programs">
+      <div class="banner-wrapper programs">
+        <h1>Become a Poster Family for an Orphan</h1>
+      </div>
+    </section>
+    <!-- about us -->
+    <section class="section-container">
+      <div class="section-wrapper programs">
+        <div class="section-text programs">
+          <p>
+            Becoming a Poster Family for an orphan is not just a call to
+            action—it’s a profound opportunity to transform lives with
+            compassion and care. This initiative invites families or groups to
+            open their hearts and homes to a child for a day filled with warmth,
+            love, and unforgettable moments. It’s a celebration of humanity
+            where the simple act of hosting becomes a powerful gesture, offering
+            these children a glimpse of family life and the joy that comes with
+            it. Through this meaningful engagement, you create a safe and
+            nurturing environment that allows the child to experience genuine
+            connection and happiness.
+          </p>
+        </div>
+        <div class="section-img programs">
+          <img
+            src="./assets/poster-fam-orphan-img.PNG"
+            alt="program img model"
+          />
+          <p>
+            The activities planned for the day are carefully designed to foster
+            joy, laughter, and a sense of belonging. Whether it’s sharing a
+            meal, playing games, or engaging in creative activities, every
+            moment spent together becomes a cherished memory. The festive spirit
+            ignites not only the child’s heart but also that of the hosting
+            family, creating bonds that often extend beyond the event. It’s a
+            day where love takes center stage, reminding everyone involved of
+            the profound impact small acts of kindness can have on another
+            person’s life.
+            <br />
+            <br />
+            More than just a single day, this experience leaves an indelible
+            mark on both the child and the family. For the orphan, it is a day
+            of joy that inspires hope and reminds them they are seen and valued.
+            For the family, it is a humbling and uplifting experience that
+            deepens their understanding of compassion and humanity. Together,
+            these moments weave a tapestry of love that bridges lives, fostering
+            an enduring message of empathy and community. By becoming a Poster
+            Family, you are not only creating beautiful memories but also
+            championing a cause that celebrates the boundless potential of human
+            kindness.
+          </p>
+        </div>
+        <hr />
+        <div class="choices-menus">
+          <h5>Sponsor this Event?</h5>
+          <p>
+            <button type="button" class="open-modal" data-open="modal">
+              Yes</button
+            >, I would like to sponsor this event
+          </p>
+          <p>
+            No, I would like to learn more about
+            <a href="./holiday-cheer-seniors.html" class="other-programs"
+              >Other Programs</a
+            >
+          </p>
+        </div>
+        <hr />
+        <div class="choices-menus">
+          <h5>Explore more</h5>
+          <p>
+            Back to
+            <a href="./index.html" class="other-programs">Home</a>
+          </p>
+          <p>
+            Learn More About
+            <a href="./ukay-ukay.html" class="other-programs">Other Programs</a>
+          </p>
+        </div>
+        <hr />
+        <div class="choices-menus">
+          <h5>Contact us</h5>
+          <p>
+            Unit 88- Floor-A, Vista Residences, 309 Katipunan
+            <br />
+            Avenue, Quezon City; Cell Number 09171920208; or 09166977997
+            <br />
+            <br />
+            <strong> Gmail:</strong> Heartspire2024@gmail.com
+          </p>
+        </div>
+        <div class="modal" id="modal">
+          <div class="modal-dialog">
+            <header class="modal-header">
+              <button class="close-modal" aria-label="close modal" data-close>
+                <i class="fa-solid fa-x"></i>
+              </button>
+            </header>
+            <section class="modal-content">
+              <table class="support-plan-table">
+                <thead>
+                  <tr>
+                    <th>SUPPORT PLAN</th>
+                  </tr>
+                </thead>
+              </table>
+              <table class="sponsorship-table">
+                <thead>
+                  <tr>
+                    <th>Select</th>
+                    <th>
+                      No. of Orphans to Sponsor (please click on the circle to
+                      the left)
+                    </th>
+                    <th>Estimated Costs of Adoption</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <input
+                        type="radio"
+                        name="orphans"
+                        id="1orphan"
+                        value="1"
+                        onclick="calculateOrphanDonation(500, 14, 1, this)"
+                      />
+                    </td>
+                    <td>
+                      <label for="1orphan">1 Orphan</label>
+                    </td>
+                    <td>
+                      <!-- Hidden donation amount initially -->
+                      <span
+                        class="donation-amount"
+                        data-amount="8000"
+                        style="display: none"
+                        >₱8,000</span
+                      >
+                      <!-- Explanation text hidden initially -->
+                      <span
+                        class="donation-explanation"
+                        style="display: none"
+                      ></span>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <input
+                        type="radio"
+                        name="orphans"
+                        id="2orphans"
+                        value="2"
+                        onclick="calculateOrphanDonation(500, 14, 2, this)"
+                      />
+                    </td>
+                    <td>
+                      <label for="2orphans">2 Orphans</label>
+                    </td>
+                    <td>
+                      <!-- Hidden donation amount initially -->
+                      <span
+                        class="donation-amount"
+                        data-amount="15000"
+                        style="display: none"
+                        >₱15,000</span
+                      >
+                      <!-- Explanation text hidden initially -->
+                      <span
+                        class="donation-explanation"
+                        style="display: none"
+                      ></span>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <input
+                        type="radio"
+                        name="orphans"
+                        id="3orphans"
+                        value="3"
+                        onclick="calculateOrphanDonation(500, 14, 3, this)"
+                      />
+                    </td>
+                    <td>
+                      <label for="3orphans">3 Orphans</label>
+                    </td>
+                    <td>
+                      <!-- Hidden donation amount initially -->
+                      <span
+                        class="donation-amount"
+                        data-amount="22000"
+                        style="display: none"
+                        >₱22,000</span
+                      >
+                      <!-- Explanation text hidden initially -->
+                      <span
+                        class="donation-explanation"
+                        style="display: none"
+                      ></span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="payment-methods">
+                <h4>Payment Methods</h4>
+                <table class="payment-table">
+                  <thead>
+                    <tr>
+                      <th>Payment Method</th>
+                      <th>QR Code</th>
+                      <th>Account Details</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>GCASH</td>
+                      <td>
+                        <img src="./assets/gcash.PNG" alt="GCash QR Code" />
+                      </td>
+                      <td>
+                        <p>GCash Account: 09178076328</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>BPI</td>
+                      <td>
+                        <img src="./assets/bpi.PNG" alt="BPI QR Code" />
+                      </td>
+                      <td>
+                        <p>Account Number: 4253-4374-27</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- js -->
+    <script src="./script.js"></script>
+  </body>
+</html>

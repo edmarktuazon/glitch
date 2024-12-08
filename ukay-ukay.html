@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tab icon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- title -->
+    <title>Heartspire Foundation - Programs</title>
+    <!--styles -->
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav></nav>
+    </header>
+    <!-- banner -->
+    <section class="banner-container programs">
+      <div class="banner-wrapper programs">
+        <h1>UKAY-UKAY for a Cause or Anonymous Gift-Giving page</h1>
+      </div>
+    </section>
+    <!-- about us -->
+    <section class="section-container">
+      <div class="section-wrapper programs">
+        <div class="section-text programs">
+          <p>
+            The UKAY-UKAY for a Cause is not just a second-hand market—it’s a
+            heartfelt celebration of generosity, sustainability, and community.
+            Taking place at the iconic Quezon Memorial Circle, this event
+            invites visitors to declutter their homes while contributing to a
+            meaningful cause. By offering gently used items for sale,
+            participants create an opportunity for others to find treasures at
+            affordable prices, all while helping to fund initiatives that make a
+            difference in the lives of those in need. It’s a chance to let go of
+            the old to make space for the new, both in your home and in the
+            lives of those you support.
+          </p>
+        </div>
+        <div class="section-img programs">
+          <img src="./assets/ukay-ukay-img.PNG" alt="program img model" />
+          <p>
+            In addition to the UKAY-UKAY market, the Anonymous Gift-Giving
+            aspect of the event amplifies the spirit of selfless giving.
+            Visitors can participate by anonymously donating gifts, creating a
+            wave of kindness that ripples through the crowd. These thoughtful
+            acts, whether small or large, spark hope and remind us of the power
+            of kindness to uplift others. This unique aspect of the event
+            touches hearts in unexpected ways, reinforcing that the true essence
+            of giving lies not in the value of the gift but in the intention
+            behind it. By joining in, you are part of something bigger—a
+            community united by compassion, joy, and the shared belief that
+            together, we can create a world of love and support.
+            <br />
+            <br />
+            Gift Donation involves cash donation (to be utilized by the NGO for
+            Christmas Grocery Baskets), or through in-kind giving of food
+            grocery items
+          </p>
+        </div>
+        <hr />
+        <div class="choices-menus">
+          <h5>Sponsor this Event?</h5>
+          <p>
+            <button type="button" class="open-modal" data-open="modal">
+              Yes</button
+            >, I would like to sponsor this event
+          </p>
+          <p>
+            No, I would like to learn more about
+            <a href="./poster-fam-orphan.html" class="other-programs"
+              >Other Programs</a
+            >
+          </p>
+        </div>
+        <hr />
+        <div class="choices-menus">
+          <h5>Explore more</h5>
+          <p>
+            Back to
+            <a href="./index.html" class="other-programs">Home</a>
+          </p>
+          <p>
+            Learn More About
+            <a href="./culture.html" class="other-programs">Other Programs</a>
+          </p>
+        </div>
+        <hr />
+        <div class="choices-menus">
+          <h5>Contact us</h5>
+          <p>
+            Unit 88- Floor-A, Vista Residences, 309 Katipunan
+            <br />
+            Avenue, Quezon City; Cell Number 09171920208; or 09166977997
+            <br />
+            <br />
+            <strong> Gmail:</strong> Heartspire2024@gmail.com
+          </p>
+        </div>
+        <div class="modal" id="modal">
+          <div class="modal-dialog">
+            <header class="modal-header">
+              <h3>
+                Spread Holiday Cheer to Abandoned Seniors in Homes for the Aged
+              </h3>
+              <button class="close-modal" aria-label="close modal" data-close>
+                <i class="fa-solid fa-x"></i>
+              </button>
+            </header>
+            <section class="modal-content">
+              <h1>UKAY-UKAY for a Cause or Anonymous Gift-Giving</h1>
+              <h2>Kinds of UKAY-UKAY Items to be Donated</h2>
+              <p>
+                Please click on the box to the left to indicate the items you
+                wish to donate.
+              </p>
+
+              <table>
+                <tr>
+                  <th>Kind of Items</th>
+                  <th>Estimated Current Cost of the Items</th>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" id="usedClothing" /> Used Clothing
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      id="clothingCost"
+                      placeholder="Enter cost"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" id="usedFootwear" /> Used Footwear
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      id="footwearCost"
+                      placeholder="Enter cost"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" id="usedBags" /> Used Bags and
+                    Accessories
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      id="bagsCost"
+                      placeholder="Enter cost"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" id="outerwear" /> Outerwear –
+                    Jackets, coats, and blazers
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      id="outerwearCost"
+                      placeholder="Enter cost"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" id="vintageItems" /> Vintage Items
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      id="vintageCost"
+                      placeholder="Enter cost"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" id="sportswear" /> Sportswear</td>
+                  <td>
+                    <input
+                      type="number"
+                      id="sportswearCost"
+                      placeholder="Enter cost"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" id="toys" /> Toys</td>
+                  <td>
+                    <input
+                      type="number"
+                      id="toysCost"
+                      placeholder="Enter cost"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" id="brandNewItems" /> Brand New Items
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      id="newItemsCost"
+                      placeholder="Enter cost"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Total:</td>
+                  <td>
+                    <input type="number" id="total" placeholder="" readonly />
+                  </td>
+                </tr>
+              </table>
+
+              <div class="donation-address">
+                <h3>Please send your donated items to the address below:</h3>
+                <p>
+                  C/O:<br />
+                  VON RAPHAEL SULICIPAN or<br />
+                  CHRISTIAN RAYMOND C. SOLIDUM<br />
+                  Unit 415 Vista Residences<br />
+                  309 Katipunan Avenue<br />
+                  Loyola Heights, Quezon City<br />
+                  1108
+                </p>
+              </div>
+
+              <h3>Total Estimated Donation Amount</h3>
+              <p>
+                To be coded to summarize the amount (using JavaScript to
+                calculate based on checked boxes and entered costs).
+              </p>
+              <label for="donationAmount"
+                >I cannot donate; I can only afford to share this amount:
+              </label>
+              <input
+                type="number"
+                id="donationAmount"
+                placeholder="Enter donation amount"
+              />
+
+              <br /><br />
+              <p>
+                For donation email us at
+                <strong
+                  ><i
+                    ><a href="mailto:Heartspire2024@gmail.com"
+                      >Heartspire2024@gmail.com</a
+                    ></i
+                  ></strong
+                >
+              </p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- js -->
+    <script src="./script.js"></script>
+  </body>
+</html>
